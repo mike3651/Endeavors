@@ -1,0 +1,61 @@
+<!-- Michael Wilson
+This is the basic skeleton for the web page -->
+<!DOCTYPE html>
+<head>
+	<title>Dynamic web page</title>
+
+	<!-- link to my stylesheet -->
+	<link rel="stylesheet" type="text/css" href="dynamicDOM.css"/>
+
+	<!-- link to my javascript -->
+	<script type="text/javascript" src="dynamicDOM.js"></script>
+</head>
+<body>
+	<h1>Make your own webpage!</h1>
+
+	<!-- section of buttons -->
+	<div id="buttons">
+		Enter any bit of text here:<br/>
+		<input id="phrase"/> 
+		<input id="italic" type="checkbox" onchange="italic() ">Italic
+		<input id="bold" type="checkbox" onchange="bold()" >Bold
+		<br/>
+		<select id="text-options">
+			<option value="h1">Web Page title</option>	
+			<option value="h2">Section title</option>	
+			<option value="h3">Sub Section title</option>	
+			<option value="p">Add a paragraph</option>							
+		</select>
+		<button id="add-text-element">Add</button>	
+		<button id="clear">Clear Page</button>	
+
+		<input type="checkbox" id="show-divide">Show division of page
+
+		<!-- button that creates a div -->
+		<input type="checkbox" id="add-div">Add div	
+	</div>
+
+	<div id="color-selector">
+		<h2>Select the appropriate text color</h2>		
+	</div>
+
+	<div id="background-options">
+		<h2>Background options</h2>	
+		<!-- all the stuff in here will deal with the background -->
+		<select id="background-color-options">
+			<option value="black">Black</option>	
+			<option value="white">White</option>	
+			<option value="red">Red</option>	
+			<option value="blue">Blue</option>							
+		</select>
+		<button id="add-background-element">Apply Background Color</button>	
+	</div>
+
+	<div>
+		<h1>Site Preview</h1>
+	</div>
+	<!-- section for testing -->
+	<div id="webPage"></div>
+
+</body>
+</html>

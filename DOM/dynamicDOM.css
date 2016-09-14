@@ -1,0 +1,26 @@
+/* Michael Wilson
+This is the simple styling page*/
+#webPage {
+	border: 2px solid black;	
+}
+
+h1 {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+td {
+	height: 25px; 
+	width: 25px;
+}
+
+td:hover {
+	cursor: pointer;
+}
